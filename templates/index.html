@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block content %}
+            
+            
+            <!-- About Start -->
+            <div class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-text">
+                            {% if registerError %}
+                                <p style="color: red;">Please logout to register a new user</p>
+                            {% endif %}
+                            <h2><span>D</span>ecentralized and Secure Digital Operational Market Using Block-Chain</h2>
+                            <p>
+                                The mercurial ecosystem of the fin-tech environment has the potential of being truly
+                                revolutionized by the Blockchain technology. The game-changing innovation that has come into
+                                the big picture because of Blockchain is due to its decentralized and distributed infrastructure
+                                which rules out the middleman and builds unshaken trust between the business and consumers.
+                            </p>
+                            <p>   
+                                Most small and mid-sized businesses operate within slim margins and any minute delay in
+                                payment can result in heavy losses and threaten the very existence of their businesses. Buyers are
+                                forced to release funds without any prior guarantee on delivery of products and sellers have to
+                                put their blind faith to test in order to receive their rightful remittance. Furthermore, safety of the
+                                software-based encryption wallet is also at stake since its security cannot be guaranteed. This
+                                paper discusses the prospective use of autonomous and decentralized storage of Inter Planetary
+                                File System (IPFS) to store and share design files and additional product specifications. This
+                                kind of peer-to-peer storage of data demonstrates the working principle of our proposed solution
+                                for secure business transactions. 
+                            </p>
+                            <p>
+                                In addition, we discuss comprehensive security and cost
+                                analysis of the proposed solution underlining its efficiency with respect to salient safety and
+                                performance requirements. Furthermore, we design a secure Blockchain-based lightweight wallet
+                                to protect simplified payment verification (SPV). In order to defend the validation procedure of
+                                the transaction, we bring forward a Secure Mutual Authentication Protocol (SMAP) based on the
+                                Universal 2nd Factor (U2F) protocol for mobile payment. To assure genuine service, we use the
+                                SHA-256 algorithm and an asymmetric cryptosystem for achieving mutual authentication that
+                                can resist unwanted intrusion and cyber attacks. This encapsulates the account information of the
+                                associated parties throughout the mobile-transaction process. 
+                            </p>
+                            <p>
+                                The exposition put forward utilizes
+                                smart contracts to govern B2B payments and trace financial transactions involving the candidates
+                                belonging to the business model. The ability of our proposed Blockchain-based solution to trace
+                                the different manufacturing stages of the product and promote trust in B2B payments among the
+                                participating stakeholders through different smart tools allows buyers and sellers to break free
+                                from the decades-old financial infrastructure and engage in straightforward business.
+                            </p>
+                            <a class="btn" href="{{ url_for('about') }}">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+{% endblock %}

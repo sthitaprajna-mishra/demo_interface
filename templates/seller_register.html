@@ -1,0 +1,25 @@
+{% extends "register.html" %}
+
+{% block title %}
+<h2>Seller Registration</h2>
+{% endblock %}
+
+{% block forms %}
+
+                                    <div class="form-group">
+                                        <input name="buyer_type" type="hidden" class="form-control" value="Seller"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                          <label>Tags associated with seller: </label><br>
+                                          <input type="checkbox" id="choice1" name="choice" value="Animal Husbandry">
+                                          <label for="choice1"> Animal Husbandry</label><br> 
+                                          <input type="checkbox" id="choice2" name="choice" value="Handicrafts">
+                                          <label for="choice2"> Handicrafts</label><br>
+                                          <input type="checkbox" id="choice3" name="choice" value="Automobile">
+                                          <label for="choice3"> Automobile</label><br>
+                                          <input type="checkbox" id="choice4" name="choice" value="Agriculture">
+                                          <label for="choice4"> Agriculture</label><br><br>
+                                    </div>
+
+{% endblock %}
